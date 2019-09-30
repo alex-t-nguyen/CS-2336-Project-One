@@ -94,20 +94,20 @@ You have been assigned to help develop the AI part of the game.
       - Ant may not breed again unless it survives another 3 turns
   
 **Beetle Details:**
-    - **Move**
-      - Move toward nearest orthogonal ant
-      - If multiple ants are nearest prioritize movement
-      - Move toward ant with most adjacent ant neighbors (orthogonal and diagonal)
-      - If still tied, move toward ant with most ant neighbors using the following priority: N, E, S, W
-      - If no ant, move toward farthest edge
-      - If there is a tie for farthest edge, use the following priority: N, E, S W
-    - **Breed**
-      - If beetle survives for 8 turns, it breeds
-      - Use breeding algorithm for ants
-      - Beetle cannot breed again unless it survives another 8 turns
-    - **Starve**
-      - If a beetle does not eat an ant in 5 turns, it dies
-  
+  - **Move**
+    - Move toward nearest orthogonal ant
+    - If multiple ants are nearest prioritize movement
+    - Move toward ant with most adjacent ant neighbors (orthogonal and diagonal)
+    - If still tied, move toward ant with most ant neighbors using the following priority: N, E, S, W
+    - If no ant, move toward farthest edge
+    - If there is a tie for farthest edge, use the following priority: N, E, S W
+  - **Breed**
+    - If beetle survives for 8 turns, it breeds
+    - Use breeding algorithm for ants
+    - Beetle cannot breed again unless it survives another 8 turns
+  - **Starve**
+    - If a beetle does not eat an ant in 5 turns, it dies
+
 **User Interface:** The user will be prompted for the following information in the order listed
   - Initial grid filename
   - Character to represent ant in output
