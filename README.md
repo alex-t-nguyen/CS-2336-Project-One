@@ -10,9 +10,9 @@ You have been assigned to help develop the AI part of the game.
 
 Pseudocode: Your pseudocode should describe the following items
 • For each function, identify the following
-  o Determine the parameters
-  o Determine the return type
-  o Detail the step-by-step logic that the function will perform
+o Determine the parameters
+o Determine the return type
+o Detail the step-by-step logic that the function will perform
 • Functions
 o Ant class
   ▪ Breed
