@@ -9,42 +9,42 @@ invading colony of beetles. The player will have an opportunity to play against 
 You have been assigned to help develop the AI part of the game.
 
 **Pseudocode:** Your pseudocode should describe the following items
-**- For each function, identify the following**
+  - **For each function, identify the following**
     - Determine the parameters
     - Determine the return type
     - Detail the step-by-step logic that the function will perform
-**- Functions**
-  **- Ant class**
+  - **Functions**
+    - **Ant class**
       - Breed
       - Move
-  **- Beetle class**
+    - **Beetle class**
       - Breed
       - Move
       - Starve
-  **- Main class**
+    - **Main class**
       - Main
       - Any additional functions that you plan to create
 
 **Classes**
-**- Base class**
+  - **Base class**
     - Name file Creature.java
     - Creature
-  - Abstract class (-5 points if not)
-  - Methods
-  - Move (abstract) (-5 points if not)
-  - Breed (abstract) (-5 points if not)
-  - Derived Classes
-**- Ant**
-    - Name file Ant.java
-    - Methods
-    - Move
-    - Breed
-**- Beetle**
-    - Name file Beetle.java
-    - Methods
-    - Move
-    - Breed
-    - Starve
+    - Abstract class (-5 points if not)
+  - **Methods**
+    - Move (abstract) (-5 points if not)
+    - Breed (abstract) (-5 points if not)
+  - **Derived Classes**
+    - **Ant**
+        - Name file Ant.java
+        - Methods
+        - Move
+        - Breed
+    - **Beetle**
+        - Name file Beetle.java
+        - Methods
+        - Move
+        - Breed
+        - Starve
   - You can add any member variables necessary for each class
   - The main function must be in a file named Main.java
 
@@ -74,7 +74,7 @@ You have been assigned to help develop the AI part of the game.
   5. Beetles breed
 
 **Ant Details:**
-**- Move**
+  - **Move**
     - Each ant will move in the opposite direction of the nearest orthogonal beetle
       - If no orthogonal beetle, ant stands still
       - If multiple beetles are nearest, prioritize movement
@@ -85,28 +85,28 @@ You have been assigned to help develop the AI part of the game.
       - Ants cannot move to an occupied space
     - If space moving to is occupied, no movement happens
       - Cannot move off grid
-**- Breed**
-  - If ant survives 3 turns, it breeds
-  - Add ant in adjacent orthogonal space
-    - Start with north space and check clockwise around space until empty orthogonal space
-      found
-  - If no empty spaces, no breeding
-  - Ant may not breed again unless it survives another 3 turns
+  - **Breed**
+      - If ant survives 3 turns, it breeds
+      - Add ant in adjacent orthogonal space
+        - Start with north space and check clockwise around space until empty orthogonal space
+          found
+      - If no empty spaces, no breeding
+      - Ant may not breed again unless it survives another 3 turns
   
 **Beetle Details:**
-**- Move**
-    - Move toward nearest orthogonal ant
-    - If multiple ants are nearest prioritize movement
-    - Move toward ant with most adjacent ant neighbors (orthogonal and diagonal)
-    - If still tied, move toward ant with most ant neighbors using the following priority: N, E, S, W
-    - If no ant, move toward farthest edge
-    - If there is a tie for farthest edge, use the following priority: N, E, S W
-**- Breed**
-    - If beetle survives for 8 turns, it breeds
-    - Use breeding algorithm for ants
-    - Beetle cannot breed again unless it survives another 8 turns
-**- Starve**
-    - If a beetle does not eat an ant in 5 turns, it dies
+    - **Move**
+      - Move toward nearest orthogonal ant
+      - If multiple ants are nearest prioritize movement
+      - Move toward ant with most adjacent ant neighbors (orthogonal and diagonal)
+      - If still tied, move toward ant with most ant neighbors using the following priority: N, E, S, W
+      - If no ant, move toward farthest edge
+      - If there is a tie for farthest edge, use the following priority: N, E, S W
+    - **Breed**
+      - If beetle survives for 8 turns, it breeds
+      - Use breeding algorithm for ants
+      - Beetle cannot breed again unless it survives another 8 turns
+    - **Starve**
+      - If a beetle does not eat an ant in 5 turns, it dies
   
 **User Interface:** The user will be prompted for the following information in the order listed
   - Initial grid filename
@@ -118,7 +118,7 @@ You have been assigned to help develop the AI part of the game.
   - The initial grid will be populated from file input.
   - Prompt the user for the input filename
     - This would normally be hardcoded in an application, but zyLabs requires a filename for multiple
-    test files
+        test files
   - There will be no need for input validation.
   - Input sequence
     - Input file
@@ -130,8 +130,8 @@ You have been assigned to help develop the AI part of the game.
   - All output will be sent to the console.
   - Print the current state of the grid to the console window for each turn.
     - Display the turn header followed by a blank line
-  - TURN<space><turn number>
-  - Display each row of the grid followed by a newline
-  - Each ant and beetle is represented by the user-defined character
-  - An empty cell in the grid is represented with a space
+      - TURN -space- -turn number-
+    - Display each row of the grid followed by a newline
+      - Each ant and beetle is represented by the user-defined character
+      - An empty cell in the grid is represented with a space
     - Display a blank line after the last row of the grid
